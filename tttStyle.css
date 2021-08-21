@@ -8,6 +8,7 @@ General Layout
 }
 html,
 body {
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -19,6 +20,20 @@ body {
   );
   display: flex;
   place-items: center;
+}
+button {
+  position: absolute;
+  background-color: green;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 2px;
+  top: 25px;
+  right: 25px;
+}
+button > a {
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
 }
 .container {
   width: 100vmin; /* Records limiting factor (width or height of screen) */
